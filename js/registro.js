@@ -13,7 +13,8 @@ var Login = {
 			nit:form.txtNIT.value,
 			cel:form.txtNumero.value,
 			fecha_nac:form.txtNaciemiento.value,
-			preguntas:[form.txtPregunta1.value,form.txtPregunta2.value,form.txtPregunta3.value,form.txtPregunta4.value,form.txtPregunta5.value]
+			preguntas:[form.txtPregunta1.value,form.txtPregunta2.value,form.txtPregunta3.value,form.txtPregunta4.value,form.txtPregunta5.value],
+
 		};
 		form.txtNombres.value="";
 		form.txtApellidos.value="";
@@ -29,45 +30,75 @@ var Login = {
 	},
 	Ingresar:function(datos,form)
 	{
+		var cuenta="";
+		if (datos == null || datos == "" || datos.length == 0)
+		{
+			alert("Debe registrarse");
+			return 0;
+		}
+		if (form == null || form == "" || form.length == 0)
+		{
+			alert("Debe ingresar los datos");
+			return 0;
+		}
 		if (datos.nombre_us==form.txtUsuario.value && datos.contra==form.txtContra.value)
 		{
 			this.contador+=1;
-			alert(datos.preguntas[0]);
+			alert(this.contador);
 			if (this.contador==1)
 			{
-				var cuenta="";
-				cuenta+="<!DOCTYPE html>\n";
-				cuenta+="<html lang=\"es\">\n";
-				cuenta+="<head>\n";
-				cuenta+="<title>Cuentas Bacaria</title>"
-				cuenta+="<link rel='stylesheet' type='text/css' href='../css/cuenta.css'>\n";
-				cuenta+="<meta charset='utf-8'>\n";
-				cuenta+="</head>\n";
-				cuenta+="<body>\n";
-				cuenta+="<h1>Datos de Cuenta Bancaria</h1>\n";
-				cuenta+="<form name='frmcuentas'>\n";
-				cuenta+="<fieldset>\n";
-				cuenta+="<label>Efectivo</label>\n";
-				cuenta+="<input type='text' name='efectivo' id='efectivo'>\n";
-				cuenta+="</fieldset>\n";
-				cuenta+="<fieldset>\n";
-				cuenta+="<legend>Cuentas bancarias</legend>\n";
-				cuenta+="<label>Banco</label>\n";
-				cuenta+="<input type='text' name='Banco'>\n";
-				cuenta+="<label>Numero de cuenta</label>\n";
-				cuenta+="<input type='text' name='numero_cuenta'>\n";
-				cuenta+="<label>Saldo Actual</label>\n";
-				cuenta+="<input type='text' name='saldo'>\n";
-				cuenta+="</fieldset>\n";
-				cuenta+="<input type='button' name='btnIngresar' value='Ingresar'>\n";
-				cuenta+="</form>\n";
-				cuenta+="</body>\n";
-				cuenta+="</html>\n";
+				
+				cuenta+='<!DOCTYPE html>\n';
+				cuenta+='<html lang="es">\n';
+				cuenta+='<head>\n';
+				cuenta+='<meta charset="utf-8"/>\n';
+				cuenta+='<title>Datos_Bancarios</title>\n';
+				cuenta+='<link rel="stylesheet" type="text/css" href="../css/ventanamodal.css">\n';
+				cuenta+='<script type="text/javascript" src = "../js/registro.js"></script>';
+				cuenta+='</head>\n';
+				cuenta+='<body>\n';
+				cuenta+='<header>\n';
+				cuenta+='<h1>Datos Bancarios</h1>\n';
+				cuenta+='</header>\n';
+				cuenta+='<section>\n';
+				cuenta+='<h2>Necesitamos los siguientes datos</h2>\n';
+				cuenta+='<form  name="frmDatos" id="frmDatos">\n';
+				cuenta+='<label>Monto:</label>\n';
+				cuenta+='<input type="text" name="txtMonto" id="txtMonto" class="txt1">cuenta="<br>\n';
+				cuenta+='<br>\n';
+				cuenta+='<label>Banco:</label>\n';
+				cuenta+='<input type="text" name="txtBanco" id="txtBanco" class="txt2">\n';
+				cuenta+='<br>\n';
+				cuenta+='<br>\n';
+				cuenta+='<label>Número de cuenta:</label>\n';
+				cuenta+='<input type="text" name="txtNumeroCuenta" id="txtNumeroCuenta" class="txt3">\n';
+				cuenta+='<br>\n';
+				cuenta+='<br>\n';
+				cuenta+='<label>Saldo actual: $</label>\n';
+				cuenta+='<input type="text" name="txtSaldo" id="txtSaldo" class="txt4">\n';
+				cuenta+='<br>\n';
+				cuenta+='<br>\n';
+				cuenta+='<input type="button" name="btnIngresarDatos" id="btnIngresarDatos" value="Ingresar datos" class="btn">\n'
+				cuenta+='</form>\n';
+				cuenta+='</section>\n';
+				cuenta+='</body>\n';
+				cuenta+='</html>\n';
 				document.write(cuenta);
 			}
+
 		}else{
 			alert("Datos ingresados incorrectos");
 		}
+	},
+	DatosBancarios:function(form)
+	{
+		var banco={
+			efectivo:form.txtMonto.value,
+			nombrebanco:form.txtBanco.value,
+			numcuenta:form.txtNumeroCuenta.value,
+			saldo:form.txtSaldo.value
+		}
+		alert(banco.efectivo);
 	}
 
 
@@ -77,11 +108,13 @@ function iniciar(){
 	var completo = false;	
 	var btnregistrar =document.getElementById("btnRegistrar");
 	var btnIngresar = document.getElementById("btnIngresar");
+	var btnrecuperar = document.getElementById("btnRecuperar");
+	//var btnbanco = document.getElementById("btnIngresarDatos");
 	//Registro de usuario
 	if (btnregistrar.addEventListener)
 	{
 	 	btnregistrar.addEventListener("click",function(){
-	 		completo = validar(document.frmRegistro);
+	 		completo = validar_reg(document.frmRegistro);
 	 		if (completo == true)
 	 		{
 	 			datos = Login.registro(document.frmRegistro);
@@ -93,7 +126,7 @@ function iniciar(){
 	 	},false);
 	}else if(btnregistrar.attachEvent){
 		btnregistrar.attachEvent("onclick",function(){
-			completo = validar(document.frmRegistro);
+			completo = validar_reg(document.frmRegistro);
 	 		if (completo == true)
 	 		{
 	 			datos = Login.registro(document.frmRegistro);
@@ -103,6 +136,7 @@ function iniciar(){
 	 		}
 		});
 	}
+
 	//inicio de secion
 	if(btnIngresar.addEventListener){
 		btnIngresar.addEventListener("click",function(){
@@ -110,19 +144,34 @@ function iniciar(){
 		},false);
 	}
 
+	//Ingreso de datos de banco
+	/*if(btnbanco.addEventListener){
+		btnbanco.addEventListener("click",function(){
+			completo = validar_banco(document.frmDatos);
+			if (completo == true)
+			{
+				Login.DatosBancarios(document.frmDatos);
+			}else{
+				alert("No ingreso los datos");
+			}
+			
+		},false);
+	}*/
+	//----------------------------------------------------//
 }
 
-function validar(form)
+function validar_reg(form)
 {
+
 	return true;
 }
 
 
+function validar_banco(form)
+{
 
-
-
-
-
+	return true;
+}
 
 
 if(window.addEventListener){
