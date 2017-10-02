@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/**********************************************CUERPO**************************************************/
+body{
+	font-family: Helvetica;
+	background-image: url("../img/fondo1.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+}
+/*****************************************************TITULO**************************************/
+header h1{
+	background-color: rgba(5, 0, 0, 0.5);
+	text-align: center;
+	font-size: 3.5em;		
+	color:white;
+}
+/*****************************************************FORMULARIO*********************************/
+section{
+	background-color: rgba(5, 0, 0, 0.5);
+	margin-top: 5%;
+	width: 60%;
+	padding: 3%;
+	margin-left: 16%;
+}
+section h2{
+	text-align: center;
+	color: #fff;
+	font-size: 2em;
+}
+section form{
+	margin-top: 3%;
+	margin-left: 25%;
+}
+section form label{
+	color: white;
+	font-size: 1.5em;
+}
+
+form .txt3{
+	margin-left: 3%;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt1{
+	margin-left: 24%;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt2{
+	margin-left: 24%;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt4{
+	margin-left: 10%;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+.btn{
+	font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 40%;
+    border: none;
+    display: block;
+    margin-left: 10%;
+    margin-top: 5%;
+}
