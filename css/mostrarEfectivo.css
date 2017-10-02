@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Helvetica;
+	background-color: #D6D6D6;
+}
+/**********************************************MENU***************************************************/
+.navegacion{
+	width: 100%;
+	font-family: Helvetica;
+}
+.navegacion nav{
+	background-color: #42787A;
+	width: 100%;
+	max-width: 110%;
+	height: 90px;
+}
+.navegacion .logo{
+	float: left;
+	margin-top: 0.5%;
+	font-size: 3.5em;
+	color: white;
+}
+.navegacion nav ul{
+	list-style: none;
+	position: relative;
+}
+.navegacion nav > ul > li{
+	display: inline-block;
+	margin-top: 1%;
+}
+.navegacion nav > ul > li > a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+.navegacion nav > ul > li > a span{
+	font-size: 15px;
+	position: absolute;
+	display: none;
+}
+.navegacion nav > ul > li:hover span{
+	display: block;
+}
+.navegacion nav ul li .submenu{
+	background-color: rgba(0, 69, 75, 0.5);
+	padding: 20px;
+	position: absolute;
+	display: none; 
+}
+.navegacion nav ul li:hover .submenu{
+	display: flex;
+}
+.navegacion nav ul li .submenu .submenu-opc{
+	margin: 0 20px;
+}
+.navegacion nav ul li .submenu .submenu-opc p{
+	font-weight: 600;
+	color: white;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 15px;
+}
+.navegacion nav ul li .submenu .submenu-opc a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+/***********************************************************************TITULO**************************************/
+header h1{
+	font-size: 3em;
+	text text-align: center;
+	margin-left: 36%;
+}
+/********************************************************************TABLA**********************************************/
+section{
+	background-color: #D9CB84;
+	width: 60%;
+	margin-left: 17%;
+	padding: 4%;
+}
+table{
+	width: 800px;
+	margin-top:1%;
+	background-color: #FAF6E3;
+	padding: 0.5%;
+    border:1px black solid;
+    border-radius:5px;
+
+}
+tr{
+	background-color: #FEEAA8;
+}
+th{
+	font-size: 1.2em;
+}
+td{
+	text-align: center;
+}
