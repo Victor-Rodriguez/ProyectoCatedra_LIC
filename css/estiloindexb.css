@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Helvetica;
+	background-color: #D6D6D6;
+}
+/**********************************************MENU***************************************************/
+.navegacion{
+	width: 100%;
+	font-family: Helvetica;
+}
+.navegacion nav{
+	background-color: #42787A;
+	width: 100%;
+	max-width: 110%;
+	height: 90px;
+}
+.navegacion .logo{
+	float: left;
+	margin-top: 0.5%;
+	font-size: 3.5em;
+	color: white;
+}
+.navegacion nav ul{
+	list-style: none;
+	position: relative;
+}
+.navegacion nav > ul > li{
+	display: inline-block;
+	margin-top: 1%;
+}
+.navegacion nav > ul > li > a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+.navegacion nav > ul > li > a span{
+	font-size: 15px;
+	position: absolute;
+	display: none;
+}
+.navegacion nav > ul > li:hover span{
+	display: block;
+}
+.navegacion nav ul li .submenu{
+	background-color: rgba(0, 69, 75, 0.5);
+	padding: 20px;
+	position: absolute;
+	display: none; 
+}
+.navegacion nav ul li:hover .submenu{
+	display: flex;
+}
+.navegacion nav ul li .submenu .submenu-opc{
+	margin: 0 20px;
+}
+.navegacion nav ul li .submenu .submenu-opc p{
+	font-weight: 600;
+	color: white;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 15px;
+}
+.navegacion nav ul li .submenu .submenu-opc a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+/*********************************************BANERS**************************************************/
+.baner{
+	width: 100%;
+}
+.baner .opc1{
+	background-color: #CDCBA6;
+    width: 100%;
+    height: 568px;
+    background-attachment: fixed;
+    float: left;
+}
+.baner .opc1 img{
+	float: left;
+	width: 50%;
+	height: 60%;
+	margin-left: 4%;
+	margin-top: 8%;
+
+}
+.enunciado{
+	text-align: center;
+    font-size: 5.5em;
+    font-family: Helvetica;
+    margin-top: 15%;
+}
+.opc1 p{
+	text-align: center;
+	font-size: 1.3em;
+	margin-top: 1%;
+
+}
+.baner .opc2{
+	background-color: #E7E7DE;
+    background-size: 110%;
+    width: 100%;
+    height: 568px;
+    background-attachment: fixed;
+    float: left;	
+}
+.baner .opc2 img{
+	float: left;
+	width: 50%;
+	height: 60%;
+	margin-left: 4%;
+	margin-top: 8%;
+
+}
+
+.enunciado2{
+	text-align: center;
+    font-size: 5.5em;
+    font-family: Helvetica;
+    margin-top: 15%;
+    	
+}
+.opc2 p{
+	text-align: center;
+	font-size: 1.3em;
+	margin-top: 4%;
+		
+}
+.baner .opc3{
+	background-color: #CDCBA6;
+    background-size: 110%;
+    width: 100%;
+    height: 568px;
+    background-attachment: fixed;
+    float: left;	
+}
+.enunciado3{
+	text-align: center;
+    font-size: 2.5em;
+    font-family: Helvetica;
+    margin-top: 15%;	
+}
+.baner .opc3 img{
+	float: left;
+	width: 50%;
+	height: 60%;
+	margin-left: 4%;
+	margin-top: 8%;
+
+}
+.opc3 p{
+	text-align: center;
+	font-size: 1.4em;
+	margin-top: 4%;	
+}
+/*********************************************FOOTER***********************************************************/
+footer{
+	background-color: #42787A;
+	color: white;
+}
+footer .des{
+	text-align: center;
+	margin-top: 2%;
+	font-size: 1.3em;
+}
+footer .lic{
+	text-align: center;
+	font-size: 1.3em;
+}
