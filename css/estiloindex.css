@@ -1,0 +1,278 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/**********************************************CUERPO**************************************************/
+body{
+	font-family: Helvetica;
+	background-image: url("../img/negocios.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+}
+/**********************************************MENU***************************************************/
+.navegacion{
+    width: 100%;
+    font-family: Helvetica;
+}
+.navegacion nav{
+    background-color: #42787A;
+    width: 100%;
+    max-width: 110%;
+    height: 90px;
+}
+.navegacion .logo{
+    float: left;
+    margin-top: 0.5%;
+    font-size: 3.5em;
+    color: white;
+}
+.navegacion nav ul{
+    list-style: none;
+    position: relative;
+}
+.navegacion nav > ul > li{
+    display: inline-block;
+    margin-top: 1%;
+}
+.navegacion nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+.navegacion nav > ul > li > a span{
+    font-size: 15px;
+    position: absolute;
+    display: none;
+}
+.navegacion nav > ul > li:hover span{
+    display: block;
+}
+.navegacion nav ul li .submenu{
+    background-color: rgba(0, 69, 75, 0.5);
+    padding: 20px;
+    position: absolute;
+    display: none; 
+}
+.navegacion nav ul li:hover .submenu{
+    display: flex;
+}
+.navegacion nav ul li .submenu .submenu-opc{
+    margin: 0 20px;
+}
+.navegacion nav ul li .submenu .submenu-opc p{
+    font-weight: 600;
+    color: white;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 15px;
+}
+.navegacion nav ul li .submenu .submenu-opc a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/*********************************************FORMULARIO LOGIN********************************************/
+.frmLoign{
+	width: 30%;
+	background-color: rgba(0, 63, 119, 0.5);
+	margin-top: 5%;
+	padding: 3%;
+	text-align: center;
+	margin-left: 4%;
+	float: left;
+}
+.frmLoign h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+}
+.frmLoign form{
+
+    padding: 25px;
+    box-sizing: border-box;
+}
+.Login{
+	font-size: 2.5em;
+	color: white;
+}
+.frm1{
+	margin-top: 2%;
+}
+.frm1 > label{
+	color: white;
+}
+.frm1 > .txt1{
+	margin-left: 10%;
+}
+.frm1 > .txt2{
+	margin-left: 3%;
+}
+.frm1 > .btningresar{
+	padding: 2%;
+}
+.frm1 > a{
+	text-decoration: none;
+	color: white;
+}
+
+.txt1{
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.btn{
+    padding: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    width: 40%;
+    border: none;
+}
+/**************************************FORMULARIO REGISTRO************************************************************/
+.Registro{
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+}
+.frmRegistro h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.frmRegistro{
+	background-color: rgba(0, 63, 119, 0.5);
+	float: right;
+	margin-top: 5.1%;
+	padding: 3%;
+	margin-right: 5%;
+    margin-bottom: 5%;
+}
+.frmRegistro form{
+    
+    padding: 25px;
+    box-sizing: border-box;
+}
+.frmRegistro fieldset{
+    padding: 15px;
+    box-sizing: border-box;
+    border-color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.frm2{
+	margin-top: 5%;
+}
+.frm2 , label, fieldset > label {
+	color: white;
+    font-size: 1.1em;
+}
+.fieldset{
+	float: right;
+}
+.txt2{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 18%;
+}
+.txt3{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 18%;   
+}
+.txt4{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 22%;
+}
+.txt5{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 0.2%;
+}
+.txt6{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 13%;
+}
+.txt7{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 17%;
+}
+.txt8{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+      
+}
+.txt9{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+.txt10{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;    
+}
+.txt11{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;    
+}
+.txt12{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;    
+}
+.txt13{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 33%;    
+}
+.txt14{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 34%;    
+}
+.txt15{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 8%;    
+}
+.txt16{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    margin-left: 2%;    
+}
+
+
+.btn1{
+    font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 40%;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+    
+legend{
+    color: white;
+}
