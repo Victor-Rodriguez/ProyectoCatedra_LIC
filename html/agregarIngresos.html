@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Agregar_Ingresos</title>
+	<link rel="stylesheet" type="text/css" href="../css/ventanaIngresos.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontello.css">
+</head>
+<body>
+	<div class="navegacion">
+		<nav class="menu">
+		<ul class="ul1">
+			<a href="indexb.html"><h2 class="logo">eWallet</h2></a>
+			<li class="l1"><a href="indexb.html">Inicio</a></li>
+			<li class="l1">
+				<a href="">Cuentas<span class="icon icon-down-dir"></span></a>
+				<div class="submenu">
+					<div class="submenu-opc">
+						<p>Efectivo</p>
+						<ul>
+							<li><a href="cuentaEfectivo.html">Efectivo Existente</a></li>
+						</ul>
+					</div>
+					<div class="submenu-opc">
+						<p>Cuentas</p>
+						<ul>
+							<li><a href="cuentasBacanrias.html">Cuentas de Ahorro</a></li>
+							<li><a href="agregarCuenta.html">Agregar Cuenta</a></li>
+						</ul>
+					</div>
+					<div class="submenu-opc">
+						<p>Tarjetas de Crédito</p>
+						<ul>
+							<li><a href="cuentaTarjeta.html">Tarjetas</a></li>
+							<li><a href="agregarTarjeta.html">Agregar Tarjeta</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="l1"><a href="ingresos.html">Ingresos<span class="icon icon-down-dir"></span></a></li>
+			<li class="l1"><a href="gastos.html">Gastos<span class="icon icon-down-dir"></span></a></li>
+			<li class="l1"><a href="configuraciones.html">Configuraciones generales<span class="icon icon-down-dir"></span></a></li>
+			<li class="l1"><a href="">Estadísticas<span class="icon icon-down-dir"></span></a></li>
+			<li class="l1"><a href="indexa.html">Iniciar Sesión</a></li>	
+		</ul>
+	</nav>	
+	</div>
+	<header>
+		<h1>Agregar Ingresos</h1>
+	</header>
+	<section>
+		<form>
+			<label class="fecha">dd/mm/YY</label><br>
+			<label>Fecha:</label>
+			<input type="text" name="txtFecha" id="txtFecha" class="txt1" required>
+			<br>
+			<br>
+			<label>Motivo:</label>
+			<select name="selectMotivo" id="selectMotivo" class="select">
+				<option>Pago de celular</option>
+				<option>Pago de luz eléctrica</option>
+				<option>Pago de agua</option>
+				<option>Pago de casa/alquiler</option>
+				<option>Pago de cable</option>
+				<option>Pago de Internet</option>
+				<option>Pago de educación</option>
+				<option>Supermercado</option>
+				<option>Cine</option>
+				<option>Discoteca</option>
+				<option>Teatro</option>
+				<option>Ropa</option>
+				<option>Restaurante</option>
+				<option>Tecnología</option>
+				<option>Mascota</option>
+				<option>Gasolina</option>
+				<option>Reparaciones</option>
+			</select>
+			<br>
+			<br>
+			<label>Monto:</label>
+			<label>$</label>
+			<input type="text" name="txtMonto" id="txtMonto" class="txt3" required>
+			<br>
+			<br>
+			<label>Número cuenta:</label>
+			<input type="text" name="txtNumCuenta" id="txtNumCuenta" class="txt4" required>
+			<br>
+			<br>
+			<input type="button" name="btnAgregarI" id="btnAgregarI" value="Agregar Ingreso" class="btn">
+		</form>
+	</section>
+</body>
+</html>

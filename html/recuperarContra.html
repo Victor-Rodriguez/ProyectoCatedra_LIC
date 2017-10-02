@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Recuperar_Contraseña</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilorecuperar.css">
+</head>
+<body>
+	<header>
+		<h1>Recuperar contraseña</h1>
+	</header>
+	<section>
+		<form name="frmRecuperar">
+			<label class="usuario">Usuario:</label>
+			<input type="text" name="txtUsuarioR" id="txtUsuarioR" class="txt1" required>
+			<br>
+			<br>
+			<label>Pregunta de seguridad:</label>
+			<select name="Preguntas" id="Preguntas" class="select">
+				<option value="pregunta1">¿Quién fue tu mejor amigo en la infancia?</option>
+				<option value="pregunta2">Nombre del colegio donde estudiaste</option>
+				<option value="pregunta3">Nombre de tu primera mascota</option>
+				<option value="pregunta4">Libro favorito</option>
+				<option value="pregunta5">Serie de televisión favorita</option>
+			</select>
+			<br>
+			<br>
+			<label>Respuesta:</label>
+			<input type="text" name="txtMostrarP" id="txtMostrarP" class="txt2" readonly>
+			<br>
+			<br>
+			<input type="button" name="btnRecuperarC" id="btnRecuperarC" value="Recuperar" class="btn"><br><br>
+			<a href="indexa.html">Regresar</a>
+		</form>
+	</section>
+</body>
+</html>
