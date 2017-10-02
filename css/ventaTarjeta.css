@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/**********************************************CUERPO**************************************************/
+body{
+	font-family: Helvetica;
+	background-image: url("../img/fondo1.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+}
+/*****************************************************TITULO**************************************/
+header h1{
+	background-color: rgba(5, 0, 0, 0.5);
+	text-align: center;
+	font-size: 3.5em;		
+	color:white;
+}
+/**********************************************MENU***************************************************/
+.navegacion{
+	width: 100%;
+	font-family: Helvetica;
+}
+.navegacion nav{
+	background-color: #42787A;
+	width: 100%;
+	max-width: 110%;
+	height: 90px;
+}
+.navegacion .logo{
+	float: left;
+	margin-top: 0.5%;
+	font-size: 3.5em;
+	color: white;
+}
+.navegacion nav ul{
+	list-style: none;
+	position: relative;
+}
+.navegacion nav > ul > li{
+	display: inline-block;
+	margin-top: 1%;
+}
+.navegacion nav > ul > li > a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+.navegacion nav > ul > li > a span{
+	font-size: 15px;
+	position: absolute;
+	display: none;
+}
+.navegacion nav > ul > li:hover span{
+	display: block;
+}
+.navegacion nav ul li .submenu{
+	background-color: rgba(0, 69, 75, 0.5);
+	padding: 20px;
+	position: absolute;
+	display: none; 
+}
+.navegacion nav ul li:hover .submenu{
+	display: flex;
+}
+.navegacion nav ul li .submenu .submenu-opc{
+	margin: 0 20px;
+}
+.navegacion nav ul li .submenu .submenu-opc p{
+	font-weight: 600;
+	color: white;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 15px;
+}
+.navegacion nav ul li .submenu .submenu-opc a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+/**************************************************FORMULARIO**************************************/
+section{
+	background-color: rgba(5, 0, 0, 0.5);
+	margin-top: 5%;
+	width: 60%;
+	padding: 3%;
+	margin-left: 16%;
+}
+section form{
+	margin-top: 3%;
+	margin-left: 15%;
+}
+section form label{
+	color: white;
+	font-size: 1.5em;
+}
+form .txt5{
+	margin-left: 3%;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt1{
+	margin-left: 177px;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt2{
+	margin-left: 49px;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt3{
+	margin-left: 94px;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+form .txt4{
+	margin-left: 108px;
+	background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+}
+.btn{
+	font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 40%;
+    border: none;
+    display: block;
+    margin-left: 20%;
+    margin-top: 5%;
+}
