@@ -2,23 +2,42 @@
 	padding: 0;
 	margin: 0;
 }
-/**********************************************CUERPO**************************************************/
-body{
-	font-family: Helvetica;
-	background-image: url("../img/negocios.jpg");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size: 100%;
+/*********************************FUENTES********************************/
+@font-face{
+  font-family: "RECHTMAN";
+  src:url("../font/RECHTMAN.TTF");
 }
+@font-face{
+  font-family: "Slabo27px-Regular";
+  src:url("../font/Slabo27px-Regular.ttf");
+}
+@font-face{
+  font-family: "RobotoCondensed-Regular";
+  src:url("../font/RobotoCondensed-Regular.ttf");
+}
+body{
+	font-family: "Slabo27px-Regular";
+	background-image: url("../img/negocios.jpg");
+	background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width:1920px) and (min-width:1024px){
+/**********************************************CUERPO**************************************************/
+
 /*********************************************TITULO******************************************************/
 header h1{
-    background-color: rgba(5, 0, 0, 0.5);
-    text-align: center;
-    font-size: 3.5em;       
-    color:white;
+  font-family: "RECHTMAN";
+  background-color: rgba(5, 0, 0, 0.5);
+  text-align: center;
+  font-size: 4.5em;       
+  color:white;
 }
+
 /*********************************************FORMULARIO LOGIN********************************************/
 .frmLoign{
+
 	width: 30%;
 	background-color: rgba(0, 63, 119, 0.5);
 	margin-top: 5%;
@@ -50,25 +69,23 @@ header h1{
 .frmLoing > .btningresar{
 	padding: 2%;
 }
-form .enlace{
-    text-decoration: none;
-    color: white;
+.popup-link{
+  text-decoration: none;
+  color: white;
 }
 .txt1{
-    padding: 5px;
-    font-size: 1.1em;
-}
-.txt2{
-    padding: 5px;
-    font-size: 1.1em;
+  font-family: "Slabo27px-Regular";
+  padding: 5px;
+  font-size: 1.1em;
 }
 
+
 .btn{
-    padding: 5px;
-    font-size: 1em;
-    box-sizing: border-box;
-    width: 40%;
-    border: none;
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
 }
 
 /**************************************FORMULARIO REGISTRO************************************************************/
@@ -87,126 +104,841 @@ form .enlace{
     margin-bottom: 5%;
 }
 .frmRegistro form{
+  padding: 25px;
+  box-sizing: border-box;
+}
+.frmRegistro fieldset{
+  padding: 15px;
+  box-sizing: border-box;
+  border-color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+/*.frm2{
+	margin-top: 5%;
+}*/
+label, fieldset > label {
+	color: white;
+  font-size: 1.1em;
+}
+.fieldset{
+	float: right;
+}
+.txt2{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  margin-left: 17.5%;
+  font-size: 1em;
+}
+.txt3{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 18%;   
+}
+.txt4{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 22%;
+}
+.txt5{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 0.2%;
+}
+.txt6{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 13%;
+}
+.txt7{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 17%;
+}
+.txt8{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+      
+}
+.txt9{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+}
+.txt10{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
+}
+.txt11{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
+}
+.txt12{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
+}
+.txt13{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 33%;    
+}
+.txt14{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 34%;    
+}
+.txt15{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 8%;    
+}
+.txt16{
+    font-family: "Slabo27px-Regular";
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 2%;    
+}
+
+
+.btn1{
+  
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
     
+legend{
+  color: white;
+}
+
+
+/*------------------Ventana modal------------------*/
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0px;
+
+}
+#popup:target {
+  visibility:visible;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:0;
+  z-index: 999;
+  transition:all 1s;
+}
+.popup-contenedor {
+  position: relative;
+  margin:7% auto;
+  padding:30px 50px;
+  background-color: rgba(0, 63, 119, 0.5);
+  color:#333;
+  border-radius: 3px;
+  width:50%;
+}
+a.popup-cerrar {
+  position: absolute;
+  top:3px;
+  right:3px;
+  background-color: #222;
+  padding:7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
+}
+a.popup-cerrar:hover{
+  background-color: red;
+}
+.titulos{
+  color: white;
+}
+.encabezado{
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.txt1ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.1em;
+  margin-left: 5%;
+}
+.txt2ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+  margin-left: 1.2%;
+}
+select{
+  font-size: 1em;
+  padding: 2px;
+  margin-left: 3%;
+}
+.btnventana{
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: sdc-box;
+  width: 40%;
+  border: none;
+  margin-left: 29%;
+}  
+
+}
+
+
+@media screen and (max-width:1024px) and (min-width:520px){
+    /**********************************************CUERPO**************************************************/
+/*body{
+	font-family: Helvetica;
+	background-image: url("../img/negocios.jpg");
+	background-size: cover;
+}*/
+/*********************************************TITULO******************************************************/
+header h1{
+    background-color: rgba(5, 0, 0, 0.5);
+    text-align: center;
+    font-size: 3.5em;       
+    color:white;
+}
+
+/*********************************************FORMULARIO LOGIN********************************************/
+.frmLoign{
+	width: 55%;
+    display: block;
+    margin: auto;
+	background-color: rgba(0, 63, 119, 0.5);
+	margin-top: 5%;
+	padding: 3%;
+	text-align: center;
+	margin-left: 20%;
+	float: left;
+}
+.frmLoign h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+}
+.frmLoign form{
+
     padding: 25px;
     box-sizing: border-box;
 }
+.frmLoing > label{
+	color: white;
+}
+.frmLoing > .txt1{
+	margin-left: 10%;
+
+}
+.frmLoing > .txt2{
+	margin-left: 3%;
+}
+.frmLoing > .btningresar{
+	padding: 2%;
+}
+.popup-link{
+  text-decoration: none;
+  color: white;
+}
+.txt1{
+    padding: 5px;
+    font-size: 1.1em;
+}
+.txt2{
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+.btn{
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
+}
+
+/**************************************FORMULARIO REGISTRO************************************************************/
+.frmRegistro h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.frmRegistro{
+	background-color: rgba(0, 63, 119, 0.5);
+	float: left;
+    display: block;
+    margin: auto;
+    width: 70%;
+	margin-top: 5.1%;
+	padding: 3%;
+    margin-bottom: 5%;
+    margin-left: 14%;
+   
+}
+.frmRegistro form{
+  padding: 25px;
+  box-sizing: border-box;
+}
 .frmRegistro fieldset{
-    padding: 15px;
-    box-sizing: border-box;
-    border-color: white;
-    margin-top: 3%;
-    margin-bottom: 3%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .frm2{
 	margin-top: 5%;
 }
 .frm2 , label, fieldset > label {
 	color: white;
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 .fieldset{
 	float: right;
 }
 .txt2{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 18%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 18%;
 }
 .txt3{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 18%;   
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 18%;   
 }
 .txt4{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 22%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 22%;
 }
 .txt5{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 0.2%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 0.2%;
 }
 .txt6{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 13%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 13%;
 }
 .txt7{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 17%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 17%;
 }
 .txt8{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
       
 }
 .txt9{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
 }
 .txt10{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
 }
 .txt11{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
 }
 .txt12{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
 }
 .txt13{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 33%;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 33%;    
 }
 .txt14{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 34%;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 34%;    
 }
 .txt15{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 8%;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 8%;    
 }
 .txt16{
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    margin-left: 2%;    
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 2%;    
 }
 
 
 .btn1{
-    font-size: 1em;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 40%;
-    border: none;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
 }
     
 legend{
-    color: white;
+  color: white;
 }
+
+
+/*------------------Ventana modal------------------*/
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+
+}
+#popup:target {
+  visibility:visible;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:0;
+  z-index: 999;
+  transition:all 1s;
+}
+.popup-contenedor {
+  position: relative;
+  margin:7% auto;
+  padding:30px 50px;
+  background-color: rgba(0, 63, 119, 0.5);
+  color:#333;
+  border-radius: 3px;
+  width:50%;
+}
+a.popup-cerrar {
+  position: absolute;
+  top:3px;
+  right:3px;
+  background-color: #222;
+  padding:7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
+}
+a.popup-cerrar:hover{
+  background-color: red;
+}
+.titulos{
+  color: white;
+}
+.encabezado{
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.txt1ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.1em;
+  margin-left: 5%;
+}
+.txt2ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+  margin-left: 1.2%;
+}
+select{
+  font-size: 1em;
+  padding: 2px;
+  margin-left: 3%;
+}
+.btnventana{
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: sdc-box;
+  width: 40%;
+  border: none;
+  margin-left: 29%;
+}
+}
+
+
+@media screen and (max-width:520px) and (min-width:10px){
+    /**********************************************CUERPO**************************************************/
+/*body{
+	font-family: Helvetica;
+	background-image: url("../img/negocios.jpg");
+	background-size: cover;
+    width: 100%;
+}*/
+/*********************************************TITULO******************************************************/
+header h1{
+    background-color: rgba(5, 0, 0, 0.5);
+    text-align: center;
+    font-size: 3.5em;       
+    color:white;
+}
+
+/*********************************************FORMULARIO LOGIN********************************************/
+.frmLoign{
+	width: 80%;
+    display: block;
+    margin: auto;
+	background-color: rgba(0, 63, 119, 0.5);
+	margin-top: 5%;
+	padding: 3%;
+	text-align: center;
+	margin-left: 8%;
+	float: left;
+}
+.frmLoign h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+}
+.frmLoign form{
+
+    padding: 25px;
+    box-sizing: border-box;
+}
+.frmLoing > label{
+	color: white;
+}
+.frmLoing > .txt1{
+	margin-left: 10%;
+
+}
+.frmLoing > .txt2{
+	margin-left: 3%;
+}
+.frmLoing > .btningresar{
+	padding: 2%;
+}
+.popup-link{
+  text-decoration: none;
+  color: white;
+}
+.txt1{
+    padding: 5px;
+    font-size: 1.1em;
+}
+/*.txt2{
+  padding: 5px;
+  font-size: 1.1em;
+}*/
+
+.btn{
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
+}
+
+/**************************************FORMULARIO REGISTRO************************************************************/
+.frmRegistro h2{
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.frmRegistro{
+	background-color: rgba(0, 63, 119, 0.5);
+	float: left;
+	margin-top: 5.1%;
+	padding: 3%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+   
+}
+.frmRegistro form{
+  padding: 25px;
+  box-sizing: border-box;
+}
+.frmRegistro fieldset{
+  padding: 15px;
+  box-sizing: border-box;
+  border-color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.frm2{
+	margin-top: 5%;
+}
+.frm2 , label, fieldset > label {
+	color: white;
+  font-size: 1.1em;
+}
+.fieldset{
+	float: right;
+}
+/*.txt1{
+  font-size: 1em; 
+  width: 85%;
+}*/
+.txt2{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 10%;
+  width: 85%;
+}
+.txt3{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 18%;
+    width: 85%;
+}
+.txt4{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 22%;
+    width: 85%;
+}
+.txt5{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 0.2%;
+    width: 85%;
+}
+.txt6{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 13%;
+    width: 85%;
+}
+.txt7{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 17%;
+    width: 85%;
+}
+.txt8{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+    width: 85%;
+      
+}
+.txt9{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+    width: 85%;
+}
+.txt10{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;   
+    width: 85%;
+}
+.txt11{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;    
+    width: 85%;
+}
+.txt12{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;  
+    width: 85%;
+}
+.txt13{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 23%; 
+  width: 85%;
+}
+.txt14{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 34%; 
+    width: 85%;
+}
+.txt15{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 8%;   
+    width: 85%;
+}
+.txt16{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 2%;  
+    width: 85%;
+}
+
+
+.btn1{
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40%;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+    
+legend{
+  color: white;
+}
+
+
+/*------------------Ventana modal------------------*/
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -300px;
+
+}
+#popup:target {
+  visibility:visible;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:0;
+  z-index: 999;
+  transition:all 1s;
+}
+.popup-contenedor {
+  position: relative;
+  margin:7% auto;
+  padding:30px 50px;
+  background-color: rgba(0, 63, 119, 0.5);
+  color:#333;
+  border-radius: 3px;
+  width:50%;
+}
+a.popup-cerrar {
+  position: absolute;
+  top:3px;
+  right:3px;
+  background-color: #222;
+  padding:7px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1;
+  color:#fff;
+}
+a.popup-cerrar:hover{
+  background-color: red;
+}
+.titulos{
+  color: white;
+}
+.encabezado{
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.txt1ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.1em;
+  margin-left: 3%;
+    width: 95%;
+}
+.txt2ventana{
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+  margin-left: 1.2%;
+    width: 95%;
+}
+select{
+  font-size: 1em;
+  padding: 2px;
+  margin-left: 3%;
+    width: 95%;
+}
+.btnventana{
+  padding: 5px;
+  font-size: 1em;
+  box-sizing: sdc-box;
+  width: 60%;
+  border: none;
+  margin-left: 20%;
+}    
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,16 +2,99 @@
 	padding: 0;
 	margin: 0;
 }
+/*********************************FUENTES********************************/
+@font-face{
+	font-family: "RECHTMAN";
+	src:url("../font/RECHTMAN.TTF");
+}
+@font-face{
+	font-family: "Slabo27px-Regular";
+	src:url("../font/Slabo27px-Regular.ttf");
+}
+@font-face{
+	font-family: "RobotoCondensed-Regular";
+	src:url("../font/RobotoCondensed-Regular.ttf");
+}
 /**********************************************CUERPO**************************************************/
 body{
-	font-family: Helvetica;
+	font-family: "Slabo27px-Regular";
 	background-image: url("../img/fondo1.jpg");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
+	width: 100%;
+}
+	/**********************************************MENU***************************************************/
+.navegacion{
+	width: 100%;
+}
+.navegacion nav{
+	background-color: #42787A;
+	width: 100%;
+	max-width: 110%;
+	/*height: 90px;*/
+	font-family: "Slabo27px-Regular";
+	font-size: 18px;
+}
+.navegacion .logo{
+	float: left;
+	font-family: "RECHTMAN";
+	margin-top: 0.5%;
+	margin-left: 15px;
+	font-size: 4em;
+	color: white;
+}
+.navegacion nav ul{
+	list-style: none;
+	position: relative;
+}
+.navegacion nav > ul > li{
+	display: inline-block;
+	margin-top: 1%;
+}
+.navegacion nav > ul > li > a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+.navegacion nav > ul > li > a span{
+	font-size: 15px;
+	position: absolute;
+	display: none;
+}
+.navegacion nav > ul > li:hover span{
+	display: block;
+}
+.navegacion nav ul li .submenu{
+	background-color: #42787A;
+	padding: 20px;
+	position: absolute;
+	display: none; 
+}
+.navegacion nav ul li:hover .submenu{
+	display: flex;
+}
+.navegacion nav ul li .submenu .submenu-opc{
+	margin: 0 20px;
+}
+.navegacion nav ul li .submenu .submenu-opc p{
+	font-weight: 600;
+	color: white;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 15px;
+}
+.navegacion nav ul li .submenu .submenu-opc a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
 }
 /*****************************************************TITULO**************************************/
 header h1{
+	width: 100%;
+	display: inline-block;
 	background-color: rgba(5, 0, 0, 0.5);
 	text-align: center;
 	font-size: 3.5em;		
@@ -46,19 +129,19 @@ form .txt3{
     font-size: 1em;
 }
 form .txt1{
-	margin-left: 24%;
+	margin-left: 21.3%;
 	background-color: transparent;
     color: #fff;
     font-size: 1em;
 }
 form .txt2{
-	margin-left: 24%;
+	margin-left: 21.7%;
 	background-color: transparent;
     color: #fff;
     font-size: 1em;
 }
 form .txt4{
-	margin-left: 10%;
+	margin-left: 9%;
 	background-color: transparent;
     color: #fff;
     font-size: 1em;

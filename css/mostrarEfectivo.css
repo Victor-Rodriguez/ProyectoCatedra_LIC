@@ -2,25 +2,41 @@
 	margin: 0;
 	padding: 0;
 }
+/*********************************FUENTES********************************/
+@font-face{
+	font-family: "RECHTMAN";
+	src:url("../font/RECHTMAN.TTF");
+}
+@font-face{
+	font-family: "Slabo27px-Regular";
+	src:url("../font/Slabo27px-Regular.ttf");
+}
+@font-face{
+	font-family: "RobotoCondensed-Regular";
+	src:url("../font/RobotoCondensed-Regular.ttf");
+}
 body{
-	font-family: Helvetica;
+	font-family: "Slabo27px-Regular";
 	background-color: #D6D6D6;
 }
 /**********************************************MENU***************************************************/
 .navegacion{
 	width: 100%;
-	font-family: Helvetica;
 }
 .navegacion nav{
 	background-color: #42787A;
 	width: 100%;
 	max-width: 110%;
-	height: 90px;
+	/*height: 90px;*/
+	font-family: "Slabo27px-Regular";
+	font-size: 18px;
 }
 .navegacion .logo{
 	float: left;
+	font-family: "RECHTMAN";
 	margin-top: 0.5%;
-	font-size: 3.5em;
+	margin-left: 15px;
+	font-size: 4.5em;
 	color: white;
 }
 .navegacion nav ul{
@@ -46,7 +62,7 @@ body{
 	display: block;
 }
 .navegacion nav ul li .submenu{
-	background-color: rgba(0, 69, 75, 0.5);
+	background-color: #42787A;
 	padding: 20px;
 	position: absolute;
 	display: none; 
