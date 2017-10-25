@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Login_Registro</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/estiloindex.css">
 	<link rel="stylesheet" type="text/css" href="../css/fontello.css">
 	<script type="text/javascript" src = "../js/registro.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -25,11 +27,12 @@
 			<br>
 			<br>
 			<br>
-			<label>¿Has olvidado su contraseña?</label>
+			<label>¿Has olvidado tu contraseña?</label>
 			<br><br>
-			<a href="recuperarContra.html" class="enlace">Recuperar</a>
+			<a href="#popup" class="popup-link">Recuperar</a>
 		</form>
 	</section>
+		
 	
 	
 	<section class="frmRegistro">
@@ -94,11 +97,45 @@
 			<br>
 			<br>
 			<label>Fecha de naciemiento:</label>
-			<input type="text" name="txtNaciemiento" id="txtNaciemiento" class="txt16" required>
+			<input type="tex" name="txtNaciemiento" id="txtNaciemiento" class="txt16" required>
 			<br>
 			<br>
 			<input type="button" name="btnRegistrar" id="btnRegistrar" value="Registrar" class="btn1">
 		</form>
 	</section>
+	
+	
+<div class="modal-wrapper" id="popup">
+   <div class="popup-contenedor">
+      <form name="frmRecuperar">
+      	<h1 class="encabezado">Recuperar contraseña</h1>
+			<label class="titulos">Usuario:</label>
+			<input type="text" name="txtUsuarioR" id="txtUsuarioR" class="txt1ventana" required>
+			<br>
+			<br>
+			<br>
+			<label class="titulos">Pregunta:</label>
+			<select name="Preguntas" id="Preguntas" class="select">
+				<option value="pregunta1">¿Quién fue tu mejor amigo en la infancia?</option>
+				<option value="pregunta2">Nombre del colegio donde estudiaste</option>
+				<option value="pregunta3">Nombre de tu primera mascota</option>
+				<option value="pregunta4">Libro favorito</option>
+				<option value="pregunta5">Serie de televisión favorita</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<label class="titulos">Respuesta:</label>
+			<input type="text" name="txtMostrarP" id="txtMostrarP" class="txt2ventana">
+			<br>
+			<br>
+			<br>
+			<input type="button" name="btnRecuperarC" id="btnRecuperarC" value="Recuperar" class="btnventana"><br><br>
+		</form>
+      <a class="popup-cerrar" href="#">X</a>
+   </div>
+</div>
+
+	
 </body>
 </html>

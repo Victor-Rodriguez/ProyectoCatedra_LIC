@@ -6,6 +6,7 @@
 	<title>Cuentaas_Ahorro</title>
 	<link rel="stylesheet" type="text/css" href="../css/mostrarCentaAhorro.css">
 	<link rel="stylesheet" type="text/css" href="../css/fontello.css">
+	<script type="text/javascript" src="../js/mostrar_CB.js"></script>
 </head>
 <body>
 	<div class="navegacion">
@@ -41,8 +42,7 @@
 			<li class="l1"><a href="ingresos.html">Ingresos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="gastos.html">Gastos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="configuraciones.html">Configuraciones generales<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="">Estadísticas<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="indexa.html">Iniciar Sesión</a></li>	
+			<li class="l1"><a href="estadistica.html">Estadísticas<span class="icon icon-down-dir"></span></a></li>
 		</ul>
 	</nav>	
 	</div>
@@ -54,22 +54,11 @@
 	<br>
 	<br>
 	<section>
-		<table>
-			<tr>
-				<th>Banco</th>
-				<th>Número de Cuenta</th>
-				<th>Saldo Actual</th>
-			</tr>	
-			<tr>
-				<td>Nombre_Banco</td>
-				<td># Cuenta</td>
-				<td>$</td>
-			</tr>
+		<table id="Mdatos">
+			
+			
 		</table>
 	</section>
-	<br>
-	<br>
-	<label>¿Desea agregar una nueva cuenta?</label><br>
-	<a href="datosBancarios.html" class="enlace">Agregar Cuenta</a>
+	
 </body>
 </html>

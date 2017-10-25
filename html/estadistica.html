@@ -48,13 +48,56 @@
 			<li class="l1"><a href="ingresos.html">Ingresos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="gastos.html">Gastos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="configuraciones.html">Configuraciones generales<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="">Estadísticas<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="indexa.html">Iniciar Sesión</a></li>	
+			<li class="l1"><a href="estadistica.html">Estadísticas<span class="icon icon-down-dir"></span></a></li>
 		</ul>
 	</nav>	
 	</div>
-	<header>
-		<h1>ESTA EN CONSTRUCCIÓN</h1>
-	</header>
+	<section class="estadis1">
+		<article class="datos">
+			<form name="frmTiempo">
+			<h2 class="encabezado1">Periodos de Tiempo</h2>
+			<br>
+			<select name="selectTiempo" id="selectTiempo" class="selectTiempo">
+				<option id="opc1">Mensuales</option>
+				<option id="opc2">Anuales</option>
+				<option id="opc3">Peiodo</option>
+			</select>
+		</form>	
+		</article>
+		<article class="grafica">
+			<h2>Mostrar graficas de Ingresos vs Gastos</h2>
+		</article>
+	</section>
+	<section class="estadis2">
+		<article class="datos2">
+			<form name="frmIngresosE">
+				<h2 class="encabezado2">Ingresos</h2>
+				<br>
+				<select name="selectIngresos" id="selectIngresos">
+					<option>Montos en efectivo</option>
+					<option>Cuentas de ahorro</option>
+				</select>
+			</form>
+		</article>
+		<article class="grafica2">
+			<h2>Mostrar gráficas de Ingresos</h2>
+		</article>
+	</section>
+	<section class="estadis3">
+		<article class="datos3">
+			<form name="frmComparativos">  
+				<h2 class="encabezado3">Comparativos</h2>
+				<br>
+				<select name="selectCom" id="selectCom" class="">
+					<option>Ingresos</option>
+					<option>Gastos</option>
+					<option>Ingresos vs Gastos</option>
+				</select>
+			</form>
+		</article>
+		<article class="grafica3">
+			<h2>Mostrar gráficas de comparativos</h2>
+		</article>
+	</section>
 </body>
 </html>

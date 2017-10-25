@@ -5,6 +5,7 @@
 	<title>Agregar_Ingresos</title>
 	<link rel="stylesheet" type="text/css" href="../css/ventanaIngresos.css">
 	<link rel="stylesheet" type="text/css" href="../css/fontello.css">
+	
 </head>
 <body>
 	<div class="navegacion">
@@ -40,8 +41,7 @@
 			<li class="l1"><a href="ingresos.html">Ingresos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="gastos.html">Gastos<span class="icon icon-down-dir"></span></a></li>
 			<li class="l1"><a href="configuraciones.html">Configuraciones generales<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="">Estadísticas<span class="icon icon-down-dir"></span></a></li>
-			<li class="l1"><a href="indexa.html">Iniciar Sesión</a></li>	
+			<li class="l1"><a href="estadistica.html">Estadísticas<span class="icon icon-down-dir"></span></a></li>
 		</ul>
 	</nav>	
 	</div>
@@ -49,32 +49,15 @@
 		<h1>Agregar Ingresos</h1>
 	</header>
 	<section>
-		<form>
+		<script type="text/javascript" src="../js/agregarIngreso.js"></script>
+		<form name="frmIngresos" id="frmIngresos">
 			<label class="fecha">dd/mm/YY</label><br>
 			<label>Fecha:</label>
 			<input type="text" name="txtFecha" id="txtFecha" class="txt1" required>
 			<br>
 			<br>
 			<label>Motivo:</label>
-			<select name="selectMotivo" id="selectMotivo" class="select">
-				<option>Pago de celular</option>
-				<option>Pago de luz eléctrica</option>
-				<option>Pago de agua</option>
-				<option>Pago de casa/alquiler</option>
-				<option>Pago de cable</option>
-				<option>Pago de Internet</option>
-				<option>Pago de educación</option>
-				<option>Supermercado</option>
-				<option>Cine</option>
-				<option>Discoteca</option>
-				<option>Teatro</option>
-				<option>Ropa</option>
-				<option>Restaurante</option>
-				<option>Tecnología</option>
-				<option>Mascota</option>
-				<option>Gasolina</option>
-				<option>Reparaciones</option>
-			</select>
+			<input type="tex" name="txtMotivo" id="txtMotivo" class="txt3">
 			<br>
 			<br>
 			<label>Monto:</label>
